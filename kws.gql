@@ -1,0 +1,7 @@
+twitter = loadgraph("./twitter.yaml")
+kws = loadapp("./grape-test/kws.yaml")
+kws.query(Graph("./grape-test/kws.query"), "im")
+unloadapp(kws)
+unloadgraph(twitter)
+exit
+

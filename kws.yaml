@@ -1,0 +1,30 @@
+---
+app: # Application specification
+  # checkout parameter
+  param:
+    - graph
+  name: kws
+  so_location: $GRAPE_LIB/libapp_kws.so
+
+  # compatible graph spec:
+  graph_etype:
+    - int
+    - double
+  graph_vtype:
+    - int
+  graph_type:
+    - immutable_edgecut
+    # - mutable
+  graph_load_strategy:
+    - both_out_in
+
+  message_strategy: edge_in
+  message_type: pair
+  result_prefix: .
+
+  enable_coordinator_aggregation: false
+  enable_assemble: false
+  enable_result_output: true
+  enable_auto: false
+
+  query_type: string
