@@ -1,0 +1,13 @@
+---
+graph: # Graph specification
+  nfrag: 4
+  type: immutable_edgecut
+  etype: double
+  vtype: double
+  load_strategy: onlyout
+  partition_strategy: prepartitioned
+  file_format: evrfiles
+  rfile: $GRAPE_TEST/yago1-kws.r
+  efile: $GRAPE_TEST/yago1-kws.e
+  vfile: $GRAPE_TEST/yago1-kws.v
+  serialization_prefix: ./yago_serialization
