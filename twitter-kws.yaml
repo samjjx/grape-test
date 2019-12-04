@@ -1,0 +1,13 @@
+--- 
+graph: # Graph specification
+  nfrag: 4
+  type: immutable_edgecut
+  etype: double
+  vtype: double
+  load_strategy: bothOutIn
+  partition_strategy: prepartitioned
+  file_format: evrfiles
+  rfile: ./grape-test/twitter-kws.r
+  efile: ./grape-test/twitter-kws.e
+  vfile: ./grape-test/twitter-kws.v
+  serialization_prefix: ./twitter_serialization
