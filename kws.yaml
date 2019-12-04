@@ -9,13 +9,13 @@ app: # Application specification
   # compatible graph spec:
   graph_etype:
     - int
+    - double
   graph_vtype:
     - int
+    - double
   graph_type:
     - immutable_edgecut
     # - mutable
-  graph_load_strategy:
-    - both_out_in
 
   message_strategy: edge_in
   message_type: pair
